@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: 0;
+    box-sizing: border-box;
+    transition: .2s ease ease-in-out;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    color: #656464;
+}
+
+i {
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.card {
+    border: none;
+    height: 400px;
+    width: 270px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #efeeee;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px grey, -5px -5px 5px #ffffff;
+}
+
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.profileImage{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 1px solid #a9a6a6;
+    padding: 2px;
+    box-shadow: 2px 2px 2px grey, -2px -2px 2px #ffffff;
+}
+
+.fa-brands {
+    padding: 6px;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 1.5px 1.5px 1.5px grey, -1.5px -1.5px 1.5px #ffffff;
+
+}
+
+.name {
+    font-weight: 600;
+    color: #575656;
+}
+
+.detail {
+    font-weight: 500;
+}
+
+.socialMedia {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.socialMedia i {
+    font-size: 20px;
+    transition: .3s;
+}
+
+.socialMedia i:first-child {
+    color: #3b5998;
+}
+
+.socialMedia i:last-child {
+    color: #171515;
+}
+
+.socialMedia i:nth-child(2) {
+    color: #1DA1F2;
+}
+
+.socialMedia i:nth-child(3) {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.like-and-comment {
+    display: flex;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn button{
+    padding: 5px 15px;
+    border: none;
+    box-shadow: 1.5px 1.5px 1.5px grey, -1.5px -1.5px 1.5px #ffffff;
+    border-radius: 3px;
+    margin-top: 5px;
+    transition: .3s;
+    cursor: pointer;
+    width: 100px;
+    font-weight: 500;
+}
+.btn button a{
+    font-weight: 500;
+    color: #171515;
+}
+/* Hover section */
+
+.btn button:hover,
+.socialMedia i:hover
+{
+    box-shadow: 1.5px 1.5px 1.5px #fff, -1.5px -1.5px 1.5px grey;
+}
+
+.profileImage:hover {
+    box-shadow: 1px 1px 1px #fff, -1px -1px 1px grey;
+}
+
+i:hover {
+    font-size: large;
+}
+
+h2:hover,
+h4:hover {
+    color: #605689;
+}
+
+/* Like comment share section  */
+
+.like-comment-and-share {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    color: #474747;
+}
+
+.like,
+.Comment,
+.Share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: .4rem;
+
+}
+
+.like,
+.Comment {
+    border-right: 2px solid grey;
+}
+
+.like-comment-and-share div p {
+    font-size: .65rem;
+}
